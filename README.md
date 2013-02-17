@@ -18,7 +18,9 @@ I created it primarily because `QLPreviewItem` states that `previewItemURL` must
 
 	#import "AZAPreviewController.h"
 
-That's it, the rest is exactly like QLPreviewController.
+That's it, the rest is exactly like `QLPreviewController`, just specify remote URL instead of local in `QLPreviewItem` instance.
+
+For more details see included project.
 
 #Notes
 
