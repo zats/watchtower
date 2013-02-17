@@ -82,9 +82,9 @@
 	previewController.dataSource = self;
 	previewController.delegate = self;
 	// navigation controller
-	UINavigationController *navigationCOntroller = [[UINavigationController alloc] initWithRootViewController:previewController];
+	UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:previewController];
 	// presenting
-	[self presentViewController:navigationCOntroller
+	[self presentViewController:navigationController
 					   animated:YES
 					 completion:nil];
 }
