@@ -1,4 +1,4 @@
-#What, why etc
+#What, why
 This is a simple extension over QLPreviewController allowing to display remote files.
 
 I created it primarily because `QLPreviewItem` states that `previewItemURL` must be a file-type URL (local files only).
@@ -42,4 +42,4 @@ If you want to be notified when remote item failed to load you have to implement
 
 # TODOs
 
-Currently if pan gesture wasn't finished and next item didn't finish loading it might stay in loading state for ever, help would be much appreciated
+Currently if pan gesture wasn't finished and next item didn't finish loading it might stay in loading state forever, help much appreciated
