@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:RemoteQuickLookTest.xcodeproj">
+      location = "self:Watchtower.xcodeproj">
    </FileRef>
 </Workspace>

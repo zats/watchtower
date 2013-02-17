@@ -33,6 +33,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		96C2DD0116D11C4000663B47 /* Watchtower-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "Watchtower-Info.plist"; path = "RemoteQuickLookTest/Watchtower-Info.plist"; sourceTree = SOURCE_ROOT; };
 		96C99F7416D109970082A61A /* AZAAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AZAAppDelegate.h; path = RemoteQuickLookTest/AZAAppDelegate.h; sourceTree = SOURCE_ROOT; };
 		96C99F7516D109970082A61A /* AZAAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AZAAppDelegate.m; path = RemoteQuickLookTest/AZAAppDelegate.m; sourceTree = SOURCE_ROOT; };
 		96C99F7616D109970082A61A /* AZARootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AZARootViewController.h; path = RemoteQuickLookTest/AZARootViewController.h; sourceTree = SOURCE_ROOT; };
@@ -42,13 +43,12 @@
 		96C99F8A16D109AD0082A61A /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = RemoteQuickLookTest/Default.png; sourceTree = SOURCE_ROOT; };
 		96C99F8B16D109AD0082A61A /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "RemoteQuickLookTest/Default@2x.png"; sourceTree = SOURCE_ROOT; };
 		96C99F8C16D109AD0082A61A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = RemoteQuickLookTest/main.m; sourceTree = SOURCE_ROOT; };
-		96C99F8D16D109AD0082A61A /* RemoteQuickLookTest-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "RemoteQuickLookTest-Info.plist"; path = "RemoteQuickLookTest/RemoteQuickLookTest-Info.plist"; sourceTree = SOURCE_ROOT; };
 		96C99F8E16D109AD0082A61A /* RemoteQuickLookTest-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "RemoteQuickLookTest-Prefix.pch"; path = "RemoteQuickLookTest/RemoteQuickLookTest-Prefix.pch"; sourceTree = SOURCE_ROOT; };
 		96C99F9616D115C60082A61A /* AZAPreviewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AZAPreviewController.h; sourceTree = "<group>"; };
 		96C99F9716D115C60082A61A /* AZAPreviewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AZAPreviewController.m; sourceTree = "<group>"; };
 		96C99F9816D115C60082A61A /* AZAPreviewItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AZAPreviewItem.h; sourceTree = "<group>"; };
 		96C99F9916D115C60082A61A /* AZAPreviewItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AZAPreviewItem.m; sourceTree = "<group>"; };
-		96CB87CD16D0CD4A00BCD3B3 /* RemoteQuickLookTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RemoteQuickLookTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		96CB87CD16D0CD4A00BCD3B3 /* Watchtower.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Watchtower.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96CB87D016D0CD4A00BCD3B3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		96CB87D216D0CD4A00BCD3B3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		96CB87D416D0CD4A00BCD3B3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -115,7 +115,7 @@
 		96CB87CE16D0CD4A00BCD3B3 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				96CB87CD16D0CD4A00BCD3B3 /* RemoteQuickLookTest.app */,
+				96CB87CD16D0CD4A00BCD3B3 /* Watchtower.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -134,7 +134,6 @@
 		96CB87D616D0CD4A00BCD3B3 /* RemoteQuickLookTest */ = {
 			isa = PBXGroup;
 			children = (
-				96C99F9516D115C60082A61A /* Watchtower */,
 				96C99F7416D109970082A61A /* AZAAppDelegate.h */,
 				96C99F7516D109970082A61A /* AZAAppDelegate.m */,
 				96C99F7616D109970082A61A /* AZARootViewController.h */,
@@ -149,11 +148,11 @@
 		96CB87D716D0CD4A00BCD3B3 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				96C2DD0116D11C4000663B47 /* Watchtower-Info.plist */,
 				96C99F8916D109AD0082A61A /* Default-568h@2x.png */,
 				96C99F8A16D109AD0082A61A /* Default.png */,
 				96C99F8B16D109AD0082A61A /* Default@2x.png */,
 				96C99F8C16D109AD0082A61A /* main.m */,
-				96C99F8D16D109AD0082A61A /* RemoteQuickLookTest-Info.plist */,
 				96C99F8E16D109AD0082A61A /* RemoteQuickLookTest-Prefix.pch */,
 			);
 			name = "Supporting Files";
@@ -171,6 +170,7 @@
 		96CB880216D0D94400BCD3B3 /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
+				96C99F9516D115C60082A61A /* Watchtower */,
 				96CB880416D0D94E00BCD3B3 /* AFNetworking */,
 			);
 			name = Vendor;
@@ -206,9 +206,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		96CB87CC16D0CD4A00BCD3B3 /* RemoteQuickLookTest */ = {
+		96CB87CC16D0CD4A00BCD3B3 /* Watchtower */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 96CB87F016D0CD4A00BCD3B3 /* Build configuration list for PBXNativeTarget "RemoteQuickLookTest" */;
+			buildConfigurationList = 96CB87F016D0CD4A00BCD3B3 /* Build configuration list for PBXNativeTarget "Watchtower" */;
 			buildPhases = (
 				96CB87C916D0CD4A00BCD3B3 /* Sources */,
 				96CB87CA16D0CD4A00BCD3B3 /* Frameworks */,
@@ -218,9 +218,9 @@
 			);
 			dependencies = (
 			);
-			name = RemoteQuickLookTest;
+			name = Watchtower;
 			productName = RemoteQuickLook;
-			productReference = 96CB87CD16D0CD4A00BCD3B3 /* RemoteQuickLookTest.app */;
+			productReference = 96CB87CD16D0CD4A00BCD3B3 /* Watchtower.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -233,7 +233,7 @@
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = "Alexander Zats";
 			};
-			buildConfigurationList = 96CB87C816D0CD4A00BCD3B3 /* Build configuration list for PBXProject "RemoteQuickLookTest" */;
+			buildConfigurationList = 96CB87C816D0CD4A00BCD3B3 /* Build configuration list for PBXProject "Watchtower" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -245,7 +245,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				96CB87CC16D0CD4A00BCD3B3 /* RemoteQuickLookTest */,
+				96CB87CC16D0CD4A00BCD3B3 /* Watchtower */,
 			);
 		};
 /* End PBXProject section */
@@ -351,9 +351,9 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "${SRCROOT}/RemoteQuickLookTest/RemoteQuickLookTest-Prefix.pch";
-				INFOPLIST_FILE = "$(SRCROOT)/RemoteQuickLookTest/RemoteQuickLookTest-Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/RemoteQuickLookTest/Watchtower-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
-				PRODUCT_NAME = RemoteQuickLookTest;
+				PRODUCT_NAME = Watchtower;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
@@ -364,9 +364,9 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "${SRCROOT}/RemoteQuickLookTest/RemoteQuickLookTest-Prefix.pch";
-				INFOPLIST_FILE = "$(SRCROOT)/RemoteQuickLookTest/RemoteQuickLookTest-Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/RemoteQuickLookTest/Watchtower-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
-				PRODUCT_NAME = RemoteQuickLookTest;
+				PRODUCT_NAME = Watchtower;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
@@ -375,7 +375,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		96CB87C816D0CD4A00BCD3B3 /* Build configuration list for PBXProject "RemoteQuickLookTest" */ = {
+		96CB87C816D0CD4A00BCD3B3 /* Build configuration list for PBXProject "Watchtower" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				96CB87EE16D0CD4A00BCD3B3 /* Debug */,
@@ -384,7 +384,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		96CB87F016D0CD4A00BCD3B3 /* Build configuration list for PBXNativeTarget "RemoteQuickLookTest" */ = {
+		96CB87F016D0CD4A00BCD3B3 /* Build configuration list for PBXNativeTarget "Watchtower" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				96CB87F116D0CD4A00BCD3B3 /* Debug */,
