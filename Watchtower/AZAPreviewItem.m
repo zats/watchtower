@@ -1,24 +1,24 @@
 //
-//  TPXPreviewItem.m
+//  AZAPreviewItem.m
 //  RemoteQuickLook
 //
 //  Created by Alexander Zats on 2/17/13.
 //  Copyright (c) 2013 Alexander Zats. All rights reserved.
 //
 
-#import "TPXPreviewItem.h"
+#import "AZAPreviewItem.h"
 
-@interface TPXPreviewItem () {
+@interface AZAPreviewItem () {
 	BOOL _loadingItem;
 }
 @end
 
-@implementation TPXPreviewItem
+@implementation AZAPreviewItem
 @synthesize previewItemURL = _previewItemURL;
 
-+ (TPXPreviewItem *)previewItemWithURL:(NSURL *)URL title:(NSString *)title
++ (AZAPreviewItem *)previewItemWithURL:(NSURL *)URL title:(NSString *)title
 {
-	TPXPreviewItem *instance = [[TPXPreviewItem alloc] init];
+	AZAPreviewItem *instance = [[AZAPreviewItem alloc] init];
 	instance.previewItemURL = URL;
 	instance.previewItemTitle = title;
 	return instance;

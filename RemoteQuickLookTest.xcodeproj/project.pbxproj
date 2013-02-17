@@ -7,15 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		96C99F7916D109970082A61A /* TPXAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 96C99F7516D109970082A61A /* TPXAppDelegate.m */; };
-		96C99F7A16D109970082A61A /* TPXViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96C99F7716D109970082A61A /* TPXViewController.m */; };
-		96C99F7B16D109970082A61A /* TPXViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96C99F7816D109970082A61A /* TPXViewController.xib */; };
-		96C99F8716D109A10082A61A /* TPXPreviewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96C99F8216D109A10082A61A /* TPXPreviewController.m */; };
-		96C99F8816D109A10082A61A /* TPXPreviewItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 96C99F8416D109A10082A61A /* TPXPreviewItem.m */; };
+		96C99F7916D109970082A61A /* AZAAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 96C99F7516D109970082A61A /* AZAAppDelegate.m */; };
+		96C99F7A16D109970082A61A /* AZARootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96C99F7716D109970082A61A /* AZARootViewController.m */; };
+		96C99F7B16D109970082A61A /* AZARootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96C99F7816D109970082A61A /* AZARootViewController.xib */; };
 		96C99F8F16D109AD0082A61A /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 96C99F8916D109AD0082A61A /* Default-568h@2x.png */; };
 		96C99F9016D109AD0082A61A /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 96C99F8A16D109AD0082A61A /* Default.png */; };
 		96C99F9116D109AD0082A61A /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 96C99F8B16D109AD0082A61A /* Default@2x.png */; };
 		96C99F9216D109AD0082A61A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 96C99F8C16D109AD0082A61A /* main.m */; };
+		96C99F9A16D115C60082A61A /* AZAPreviewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96C99F9716D115C60082A61A /* AZAPreviewController.m */; };
+		96C99F9B16D115C60082A61A /* AZAPreviewItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 96C99F9916D115C60082A61A /* AZAPreviewItem.m */; };
 		96CB87D116D0CD4A00BCD3B3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96CB87D016D0CD4A00BCD3B3 /* UIKit.framework */; };
 		96CB87D316D0CD4A00BCD3B3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96CB87D216D0CD4A00BCD3B3 /* Foundation.framework */; };
 		96CB87D516D0CD4A00BCD3B3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96CB87D416D0CD4A00BCD3B3 /* CoreGraphics.framework */; };
@@ -33,21 +33,21 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		96C99F7416D109970082A61A /* TPXAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TPXAppDelegate.h; path = RemoteQuickLookTest/TPXAppDelegate.h; sourceTree = SOURCE_ROOT; };
-		96C99F7516D109970082A61A /* TPXAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TPXAppDelegate.m; path = RemoteQuickLookTest/TPXAppDelegate.m; sourceTree = SOURCE_ROOT; };
-		96C99F7616D109970082A61A /* TPXViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TPXViewController.h; path = RemoteQuickLookTest/TPXViewController.h; sourceTree = SOURCE_ROOT; };
-		96C99F7716D109970082A61A /* TPXViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TPXViewController.m; path = RemoteQuickLookTest/TPXViewController.m; sourceTree = SOURCE_ROOT; };
-		96C99F7816D109970082A61A /* TPXViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TPXViewController.xib; path = RemoteQuickLookTest/TPXViewController.xib; sourceTree = SOURCE_ROOT; };
-		96C99F8116D109A10082A61A /* TPXPreviewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPXPreviewController.h; sourceTree = "<group>"; };
-		96C99F8216D109A10082A61A /* TPXPreviewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPXPreviewController.m; sourceTree = "<group>"; };
-		96C99F8316D109A10082A61A /* TPXPreviewItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPXPreviewItem.h; sourceTree = "<group>"; };
-		96C99F8416D109A10082A61A /* TPXPreviewItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPXPreviewItem.m; sourceTree = "<group>"; };
+		96C99F7416D109970082A61A /* AZAAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AZAAppDelegate.h; path = RemoteQuickLookTest/AZAAppDelegate.h; sourceTree = SOURCE_ROOT; };
+		96C99F7516D109970082A61A /* AZAAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AZAAppDelegate.m; path = RemoteQuickLookTest/AZAAppDelegate.m; sourceTree = SOURCE_ROOT; };
+		96C99F7616D109970082A61A /* AZARootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AZARootViewController.h; path = RemoteQuickLookTest/AZARootViewController.h; sourceTree = SOURCE_ROOT; };
+		96C99F7716D109970082A61A /* AZARootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AZARootViewController.m; path = RemoteQuickLookTest/AZARootViewController.m; sourceTree = SOURCE_ROOT; };
+		96C99F7816D109970082A61A /* AZARootViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AZARootViewController.xib; path = RemoteQuickLookTest/AZARootViewController.xib; sourceTree = SOURCE_ROOT; };
 		96C99F8916D109AD0082A61A /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "RemoteQuickLookTest/Default-568h@2x.png"; sourceTree = SOURCE_ROOT; };
 		96C99F8A16D109AD0082A61A /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = RemoteQuickLookTest/Default.png; sourceTree = SOURCE_ROOT; };
 		96C99F8B16D109AD0082A61A /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "RemoteQuickLookTest/Default@2x.png"; sourceTree = SOURCE_ROOT; };
 		96C99F8C16D109AD0082A61A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = RemoteQuickLookTest/main.m; sourceTree = SOURCE_ROOT; };
 		96C99F8D16D109AD0082A61A /* RemoteQuickLookTest-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "RemoteQuickLookTest-Info.plist"; path = "RemoteQuickLookTest/RemoteQuickLookTest-Info.plist"; sourceTree = SOURCE_ROOT; };
 		96C99F8E16D109AD0082A61A /* RemoteQuickLookTest-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "RemoteQuickLookTest-Prefix.pch"; path = "RemoteQuickLookTest/RemoteQuickLookTest-Prefix.pch"; sourceTree = SOURCE_ROOT; };
+		96C99F9616D115C60082A61A /* AZAPreviewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AZAPreviewController.h; sourceTree = "<group>"; };
+		96C99F9716D115C60082A61A /* AZAPreviewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AZAPreviewController.m; sourceTree = "<group>"; };
+		96C99F9816D115C60082A61A /* AZAPreviewItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AZAPreviewItem.h; sourceTree = "<group>"; };
+		96C99F9916D115C60082A61A /* AZAPreviewItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AZAPreviewItem.m; sourceTree = "<group>"; };
 		96CB87CD16D0CD4A00BCD3B3 /* RemoteQuickLookTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RemoteQuickLookTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96CB87D016D0CD4A00BCD3B3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		96CB87D216D0CD4A00BCD3B3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -90,16 +90,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		96C99F7C16D109A10082A61A /* RemoteQuickLook */ = {
+		96C99F9516D115C60082A61A /* Watchtower */ = {
 			isa = PBXGroup;
 			children = (
-				96C99F8116D109A10082A61A /* TPXPreviewController.h */,
-				96C99F8216D109A10082A61A /* TPXPreviewController.m */,
-				96C99F8316D109A10082A61A /* TPXPreviewItem.h */,
-				96C99F8416D109A10082A61A /* TPXPreviewItem.m */,
+				96C99F9616D115C60082A61A /* AZAPreviewController.h */,
+				96C99F9716D115C60082A61A /* AZAPreviewController.m */,
+				96C99F9816D115C60082A61A /* AZAPreviewItem.h */,
+				96C99F9916D115C60082A61A /* AZAPreviewItem.m */,
 			);
-			name = RemoteQuickLook;
-			sourceTree = "<group>";
+			path = Watchtower;
+			sourceTree = SOURCE_ROOT;
 		};
 		96CB87C416D0CD4A00BCD3B3 = {
 			isa = PBXGroup;
@@ -134,12 +134,12 @@
 		96CB87D616D0CD4A00BCD3B3 /* RemoteQuickLookTest */ = {
 			isa = PBXGroup;
 			children = (
-				96C99F7C16D109A10082A61A /* RemoteQuickLook */,
-				96C99F7416D109970082A61A /* TPXAppDelegate.h */,
-				96C99F7516D109970082A61A /* TPXAppDelegate.m */,
-				96C99F7616D109970082A61A /* TPXViewController.h */,
-				96C99F7716D109970082A61A /* TPXViewController.m */,
-				96C99F7816D109970082A61A /* TPXViewController.xib */,
+				96C99F9516D115C60082A61A /* Watchtower */,
+				96C99F7416D109970082A61A /* AZAAppDelegate.h */,
+				96C99F7516D109970082A61A /* AZAAppDelegate.m */,
+				96C99F7616D109970082A61A /* AZARootViewController.h */,
+				96C99F7716D109970082A61A /* AZARootViewController.m */,
+				96C99F7816D109970082A61A /* AZARootViewController.xib */,
 				96CB87D716D0CD4A00BCD3B3 /* Supporting Files */,
 			);
 			name = RemoteQuickLookTest;
@@ -256,7 +256,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				96CB87FF16D0D3F100BCD3B3 /* dribbble_debut.png in Resources */,
-				96C99F7B16D109970082A61A /* TPXViewController.xib in Resources */,
+				96C99F7B16D109970082A61A /* AZARootViewController.xib in Resources */,
 				96C99F8F16D109AD0082A61A /* Default-568h@2x.png in Resources */,
 				96C99F9016D109AD0082A61A /* Default.png in Resources */,
 				96C99F9116D109AD0082A61A /* Default@2x.png in Resources */,
@@ -279,11 +279,11 @@
 				96CB881E16D0D94E00BCD3B3 /* AFURLConnectionOperation.m in Sources */,
 				96CB881F16D0D94E00BCD3B3 /* AFXMLRequestOperation.m in Sources */,
 				96CB882016D0D94E00BCD3B3 /* UIImageView+AFNetworking.m in Sources */,
-				96C99F7916D109970082A61A /* TPXAppDelegate.m in Sources */,
-				96C99F7A16D109970082A61A /* TPXViewController.m in Sources */,
-				96C99F8716D109A10082A61A /* TPXPreviewController.m in Sources */,
-				96C99F8816D109A10082A61A /* TPXPreviewItem.m in Sources */,
+				96C99F7916D109970082A61A /* AZAAppDelegate.m in Sources */,
+				96C99F7A16D109970082A61A /* AZARootViewController.m in Sources */,
 				96C99F9216D109AD0082A61A /* main.m in Sources */,
+				96C99F9A16D115C60082A61A /* AZAPreviewController.m in Sources */,
+				96C99F9B16D115C60082A61A /* AZAPreviewItem.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

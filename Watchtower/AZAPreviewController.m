@@ -1,15 +1,15 @@
 //
-//  TPXPreviewController.m
+//  AZAPreviewController.m
 //  RemoteQuickLook
 //
 //  Created by Alexander Zats on 2/17/13.
 //  Copyright (c) 2013 Alexander Zats. All rights reserved.
 //
 
-#import "TPXPreviewController.h"
+#import "AZAPreviewController.h"
 #import <CommonCrypto/CommonDigest.h>
 #import "AFNetworking.h"
-#import "TPXPreviewItem.h"
+#import "AZAPreviewItem.h"
 
 // As seen in SSToolkit
 static NSString *AZAMD5StringFromNSString(NSString *string)
@@ -49,12 +49,12 @@ static NSString *AZALocalFilePathForURL(NSURL *URL)
 }
 
 
-@interface TPXPreviewController () <QLPreviewControllerDataSource, QLPreviewControllerDelegate>
+@interface AZAPreviewController () <QLPreviewControllerDataSource, QLPreviewControllerDelegate>
 @property (nonatomic, strong) AFHTTPClient *httpClient;
 @property (nonatomic, weak) id<QLPreviewControllerDataSource> actualDataSource;
 @end
 
-@implementation TPXPreviewController
+@implementation AZAPreviewController
 
 - (id)init
 {
@@ -94,7 +94,7 @@ static NSString *AZALocalFilePathForURL(NSURL *URL)
 {
 	id<QLPreviewItem> originalPreviewItem = [self.actualDataSource previewController:controller previewItemAtIndex:index];
 	
-	TPXPreviewItem *previewItemCopy = [TPXPreviewItem previewItemWithURL:originalPreviewItem.previewItemURL
+	AZAPreviewItem *previewItemCopy = [AZAPreviewItem previewItemWithURL:originalPreviewItem.previewItemURL
 																   title:originalPreviewItem.previewItemTitle];
 	
 	NSURL *originalURL = previewItemCopy.previewItemURL;

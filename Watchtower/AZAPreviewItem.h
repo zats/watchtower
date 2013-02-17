@@ -1,5 +1,5 @@
 //
-//  TPXPreviewItem.h
+//  AZAPreviewItem.h
 //  RemoteQuickLook
 //
 //  Created by Alexander Zats on 2/17/13.
@@ -11,9 +11,9 @@
 /*
  Default implementation of QLPreviewItem protocol
  */
-@interface TPXPreviewItem : NSObject <QLPreviewItem>
+@interface AZAPreviewItem : NSObject <QLPreviewItem>
 
-+ (TPXPreviewItem *)previewItemWithURL:(NSURL *)URL title:(NSString *)title;
++ (AZAPreviewItem *)previewItemWithURL:(NSURL *)URL title:(NSString *)title;
 
 @property (readwrite) NSURL *previewItemURL;
 @property (readwrite) NSString *previewItemTitle;

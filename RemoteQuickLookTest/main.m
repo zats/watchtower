@@ -8,11 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-#import "TPXAppDelegate.h"
+#import "AZAAppDelegate.h"
 
 int main(int argc, char *argv[])
 {
 	@autoreleasepool {
-	    return UIApplicationMain(argc, argv, nil, NSStringFromClass([TPXAppDelegate class]));
+	    return UIApplicationMain(argc, argv, nil, NSStringFromClass([AZAAppDelegate class]));
 	}
 }

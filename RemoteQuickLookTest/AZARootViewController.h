@@ -1,5 +1,5 @@
 //
-//  TPXViewController.h
+//  AZARootViewController.h
 //  RemoteQuickLook
 //
 //  Created by Alexander Zats on 2/17/13.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface TPXViewController : UIViewController
+@interface AZARootViewController : UIViewController
 
 @end

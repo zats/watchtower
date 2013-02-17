@@ -1,5 +1,5 @@
 //
-//  TPXAppDelegate.h
+//  AZAAppDelegate.h
 //  RemoteQuickLook
 //
 //  Created by Alexander Zats on 2/17/13.
@@ -8,12 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@class TPXViewController;
-
-@interface TPXAppDelegate : UIResponder <UIApplicationDelegate>
+@interface AZAAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
-
-@property (strong, nonatomic) TPXViewController *viewController;
 
 @end

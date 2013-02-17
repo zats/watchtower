@@ -1,23 +1,21 @@
 //
-//  TPXAppDelegate.m
+//  AZAAppDelegate.m
 //  RemoteQuickLook
 //
 //  Created by Alexander Zats on 2/17/13.
 //  Copyright (c) 2013 Alexander Zats. All rights reserved.
 //
 
-#import "TPXAppDelegate.h"
+#import "AZAAppDelegate.h"
+#import "AZARootViewController.h"
 
-#import "TPXViewController.h"
-
-@implementation TPXAppDelegate
+@implementation AZAAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
-	self.viewController = [[TPXViewController alloc] initWithNibName:@"TPXViewController" bundle:nil];
-	self.window.rootViewController = self.viewController;
+	self.window.rootViewController = [[AZARootViewController alloc] initWithNibName:NSStringFromClass([AZARootViewController class]) bundle:nil];
     [self.window makeKeyAndVisible];
     return YES;
 }

@@ -1,17 +1,16 @@
 //
-//  TPXViewController.m
+//  AZARootViewController.m
 //  RemoteQuickLook
 //
 //  Created by Alexander Zats on 2/17/13.
 //  Copyright (c) 2013 Alexander Zats. All rights reserved.
 //
 
-#import "TPXViewController.h"
-#import "TPXPreviewController.h"
-#import "TPXPreviewItem.h"
+#import "AZARootViewController.h"
+#import "AZAPreviewController.h"
+#import "AZAPreviewItem.h"
 
-@interface TPXViewController () <QLPreviewControllerDelegate, QLPreviewControllerDataSource, AZAPreviewControllerDelegate>
-@property (nonatomic, strong) TPXPreviewController *previewController;
+@interface AZARootViewController () <QLPreviewControllerDelegate, QLPreviewControllerDataSource, AZAPreviewControllerDelegate>
 @property (nonatomic, strong) NSArray *previewItems;
 
 // UI
@@ -19,7 +18,7 @@
 @property (weak, nonatomic) IBOutlet UIButton *showQuickLookButton;
 @end
 
-@implementation TPXViewController
+@implementation AZARootViewController
 
 - (void)viewDidLoad
 {
@@ -27,16 +26,16 @@
 
 	// Remote files
 	NSURL *docPreviewItemURL = [NSURL URLWithString:@"http://www.ada.gov/briefs/housebr.doc"];
-	TPXPreviewItem *docPreviewItem = [TPXPreviewItem previewItemWithURL:docPreviewItemURL
+	AZAPreviewItem *docPreviewItem = [AZAPreviewItem previewItemWithURL:docPreviewItemURL
 																  title:@"Microsoft Word"];
 
 	NSURL *pdfPreviewItemURL = [NSURL URLWithString:@"http://www.tug.org/texshowcase/ShowcaseCircular.pdf"];
-	TPXPreviewItem *pdfPreviewItem = [TPXPreviewItem previewItemWithURL:pdfPreviewItemURL
+	AZAPreviewItem *pdfPreviewItem = [AZAPreviewItem previewItemWithURL:pdfPreviewItemURL
 																  title:@"PDF"];
 	
 	// Local files
 	NSURL *localImageURL = [[NSBundle mainBundle] URLForResource:@"dribbble_debut" withExtension:@"png"];
-	TPXPreviewItem *localImagePreviewItem = [TPXPreviewItem previewItemWithURL:localImageURL
+	AZAPreviewItem *localImagePreviewItem = [AZAPreviewItem previewItemWithURL:localImageURL
 																		 title:@"Local image"];
 
 	NSMutableArray *previewItems = [NSMutableArray arrayWithObjects:docPreviewItem, pdfPreviewItem, localImagePreviewItem, nil];
@@ -52,7 +51,7 @@
 				NSString *title = photoDictionary[@"name"];
 				NSString *photoURLString = photoDictionary[@"image_url"];
 				NSURL *photoURL = [NSURL URLWithString:photoURLString];
-				TPXPreviewItem *previewItem = [TPXPreviewItem previewItemWithURL:photoURL
+				AZAPreviewItem *previewItem = [AZAPreviewItem previewItemWithURL:photoURL
 																		   title:title];
 				// Adding to the data provider
 				[previewItems addObject:previewItem];
@@ -79,10 +78,9 @@
 - (IBAction)_showPreviewControllerButtonHandler:(id)sender
 {
 	// preview controller
-	TPXPreviewController *previewController = [[TPXPreviewController alloc] init];
+	AZAPreviewController *previewController = [[AZAPreviewController alloc] init];
 	previewController.dataSource = self;
 	previewController.delegate = self;
-	self.previewController = previewController;
 	// navigation controller
 	UINavigationController *navigationCOntroller = [[UINavigationController alloc] initWithRootViewController:previewController];
 	// presenting
@@ -90,8 +88,6 @@
 					   animated:YES
 					 completion:nil];
 }
-
-#pragma mark - QLPreviewControllerDelegate
 
 #pragma mark - QLPreviewControllerDataSource
 
@@ -107,7 +103,7 @@
 
 #pragma mark - AZAPreviewControllerDelegate
 
-- (void)AZA_previewController:(TPXPreviewController *)controller failedToLoadRemotePreviewItem:(id<QLPreviewItem>)previewItem withError:(NSError *)error
+- (void)AZA_previewController:(AZAPreviewController *)controller failedToLoadRemotePreviewItem:(id<QLPreviewItem>)previewItem withError:(NSError *)error
 {
 	NSString *alertTitle = [NSString stringWithFormat:@"Failed to load file %@", previewItem.previewItemURL];
 	[[[UIAlertView alloc] initWithTitle:alertTitle
