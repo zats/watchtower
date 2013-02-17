@@ -26,16 +26,19 @@ Class `AZAPreviewItem` simply provides default implementation of `QLPreviewItem`
 
 If you want to be notified when remote item failed to load you have to implement `AZAPreviewControllerDelegate` corresponding protocol method:
 
-	- (void)AZA_previewController:(AZAPreviewController *)controller failedToLoadRemotePreviewItem:(id<QLPreviewItem>)previewItem withError:(NSError *)error
-	{
-		NSString *alertTitle = [NSString stringWithFormat:@"Failed to load file %@", previewItem.previewItemURL];
-		NSString *alertMessage = [error localizedDescription];
-		[[[UIAlertView alloc] initWithTitle:alertTitle
-									message:alertMessage
-								   delegate:nil
-						  cancelButtonTitle:@"OK"
-						  otherButtonTitles:nil] show];
-	}
+```objective-c
+- (void)AZA_previewController:(AZAPreviewController *)controller failedToLoadRemotePreviewItem:(id<QLPreviewItem>)previewItem withError:(NSError *)error
+{
+	NSString *alertTitle = [NSString stringWithFormat:@"Failed to load file %@", previewItem.previewItemURL];
+	NSString *alertMessage = [error localizedDescription];
+	[[[UIAlertView alloc] initWithTitle:alertTitle
+								message:alertMessage
+							   delegate:nil
+					  cancelButtonTitle:@"OK"
+					  otherButtonTitles:nil] show];
+}
+```
+
 
 # TODOs
 
