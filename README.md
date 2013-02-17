@@ -5,8 +5,6 @@ I created it primarily because `QLPreviewItem` states that `previewItemURL` must
 
 #Installation
 
-* Run following commands in Terminal
-
 	$ cd your_project
 	$ git submodule add git@github.com:zats/watchtower.git Vendor/Watchtower
 	$ cd Vendor/Watchtower
