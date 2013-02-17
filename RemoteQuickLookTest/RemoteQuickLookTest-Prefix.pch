@@ -1,5 +1,5 @@
 //
-// Prefix header for all source files of the 'QuickLookix' target in the 'QuickLookix' project
+// Prefix header for all source files of the 'RemoteQuickLook' target in the 'RemoteQuickLook' project
 //
 
 #import <Availability.h>
