@@ -106,8 +106,9 @@
 - (void)AZA_previewController:(AZAPreviewController *)controller failedToLoadRemotePreviewItem:(id<QLPreviewItem>)previewItem withError:(NSError *)error
 {
 	NSString *alertTitle = [NSString stringWithFormat:@"Failed to load file %@", previewItem.previewItemURL];
+	NSString *alertMessage = [error localizedDescription];
 	[[[UIAlertView alloc] initWithTitle:alertTitle
-								message:[error localizedDescription]
+								message:alertMessage
 							   delegate:nil
 					  cancelButtonTitle:@"OK"
 					  otherButtonTitles:nil] show];
